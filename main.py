@@ -31,37 +31,28 @@ def upload():
     
 @app.route('/prepare', methods=['GET'])
 def prepare_dataset():
+    images = []
     d = ["Niebla","Roca","Hojas","Arena","Nubes"]
+    digits = []
     for digit in d:
-        images = []
-        filelist = glob.glob('{}/*.png'.format(digit))
-        images_read = io.concatenate_images(io.imread_collection(filelist))
-        images_read = images_read[:, :, :, 3]
-        images.append(images_read)
-        images = np.vstack(images)
-        np.save('{}.npy'.format(digit), images)
-    return "Data set procesado exitosamente"
+      filelist = glob.glob('{}/*.png'.format(digit))
+      images_read = io.concatenate_images(io.imread_collection(filelist))
+      images_read = images_read[:, :, :, 3]
+      digits_read = np.array([digit] * images_read.shape[0])
+      images.append(images_read)
+      digits.append(digits_read)
+    images = np.vstack(images)
+    digits = np.concatenate(digits)
+    np.save('X.npy', images)
+    np.save('y.npy', digits)
+    return "OK!"
 
-@app.route('/Niebla.npy', methods=['GET'])
-def download_Niebla():
-    return send_file('./Niebla.npy')
-
-@app.route('/Roca.npy', methods=['GET'])
-def download_Roca():
-    return send_file('./Roca.npy')
-
-@app.route('/Hojas.npy', methods=['GET'])
-def download_Hojas():
-    return send_file('./Hojas.npy')
-
-@app.route('/Arena.npy', methods=['GET'])
-def download_Arena():
-    return send_file('./Arena.npy')
-
-@app.route('/Nubes.npy', methods=['GET'])
-def download_Nubes():
-    return send_file('./Nubes.npy')
-
+@app.route('/X.npy', methods=['GET'])
+def download_X():
+    return send_file('./X.npy')
+@app.route('/y.npy', methods=['GET'])
+def download_y():
+    return send_file('./y.npy')
     
 if __name__ == "__main__":
     
