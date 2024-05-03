@@ -34,7 +34,7 @@ def prepare_dataset():
     images = []
     digits = []
     y = []
-    d = [1,2,3,4,5]
+    d = [0,1,2,3,4]
     for digit in d:
       filelist = glob.glob('{}/*.png'.format(digit))
       images_read = io.concatenate_images(io.imread_collection(filelist))
@@ -57,7 +57,7 @@ def download_y():
     
 if __name__ == "__main__":
     
-    digits = [1,2,3,4,5]
+    digits = [0,1,2,3,4]
     for d in digits:
         if not os.path.exists(str(d)):
             os.mkdir(str(d))
