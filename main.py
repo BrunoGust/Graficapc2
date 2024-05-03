@@ -56,7 +56,7 @@ def download_y():
     
 if __name__ == "__main__":
     
-    digits = ["Niebla","Roca","Hojas","Arena","Nubes"]
+    digits = [0, 1, 2, 3, 4]
     for d in digits:
         if not os.path.exists(str(d)):
             os.mkdir(str(d))
