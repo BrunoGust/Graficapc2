@@ -16,11 +16,11 @@
 
 
 	      numero = getRndInteger(0, 10);
-	      letra = ["Niebla","Roca","Hojas","Arena","Nubes"];
+	      letra = [1, 2, 3, 4, 5];
 	      random = Math.floor(Math.random() * letra.length);
 	      aleatorio = letra[random];
 
-	      document.getElementById('mensaje').innerHTML  = 'Escribe el simbolo de la aldea escondida entre ' + aleatorio;
+	      document.getElementById('mensaje').innerHTML  = 'Escribe el simbolo alienigena para el numero ' + aleatorio;
 	      document.getElementById('numero').value = aleatorio;
 
 	      $('#myCanvas').mousedown(function (e) {
@@ -111,7 +111,7 @@
 	    </div>
 	    
 	    <div id="imagen" align="center">
-      		<img src="https://www.shutterstock.com/image-vector/bandung-indonesia-december-6-2023-600w-2397323497.jpg" width="300"/>
-    	    </div>
+      		<img src="https://img.microsiervos.com/images2018/Alienes-Futurama.jpg"/>
+    	</div>
 	</body>
 </html>
