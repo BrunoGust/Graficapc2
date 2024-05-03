@@ -62,25 +62,6 @@ def download_Arena():
 def download_Nubes():
     return send_file('./Nubes.npy')
 
-@app.route('/Niebla.npy', methods=['GET'])
-def download_Niebla():
-    return send_file('./Niebla.npy')
-
-@app.route('/Roca.npy', methods=['GET'])
-def download_Roca():
-    return send_file('./Roca.npy')
-
-@app.route('/Hojas.npy', methods=['GET'])
-def download_Hojas():
-    return send_file('./Hojas.npy')
-
-@app.route('/Arena.npy', methods=['GET'])
-def download_Arena():
-    return send_file('./Arena.npy')
-
-@app.route('/Nubes.npy', methods=['GET'])
-def download_Nubes():
-    return send_file('./Nubes.npy')
     
 if __name__ == "__main__":
     
