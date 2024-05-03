@@ -32,8 +32,8 @@ def upload():
 @app.route('/prepare', methods=['GET'])
 def prepare_dataset():
     images = []
-    d = ["Niebla","Roca","Hojas","Arena","Nubes"]
     digits = []
+    d = [0, 1, 2, 3, 4]
     for digit in d:
       filelist = glob.glob('{}/*.png'.format(digit))
       images_read = io.concatenate_images(io.imread_collection(filelist))
