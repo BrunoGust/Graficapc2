@@ -1,4 +1,4 @@
-# Representación de símbolos alienigenas para números
+# Representación de símbolos alienígenas para números
 La idea del trabajo es poder represnetar símbolos alienigenas para números donde nosotros creamos la data dibujando estos símbolos en un cuadro de canvas.
 Se implementó el uso de Redes neuronales.
 
