@@ -1,8 +1,8 @@
-# Representación de simbolos alienigenas para números
+# Representación de símbolos alienigenas para números
 La idea del trabajo es poder represnetar símbolos alienigenas para números donde nosotros creamos la data dibujando estos símbolos en un cuadro de canvas.
 Se implementó el uso de Redes neuronales.
 
-# Ejecucion:
+# Ejecución:
 # 1. Cargar los datos para prepararlos
 Para la obtener de los datos se desplegó un página web que nos permite dibujar los símbolos en un canva. Estos símbolos, que nos servirán para el modelo, se van guardando en archivos .npy:
 - X.npy: píxeles activos por imagen dentro del canva.
@@ -19,6 +19,6 @@ Luego de obtener los datos, pasamos al modelo en colab. \
 # 3. Despliegue de la predicción
 Para la predicción se creó una ruta dentro de la página inicial. Esta permite dibujar el símbolo alinigena de los númeroa 1,2,3 o 4 para posterior al envío pueda predecir el número correcto.
 
-# Complicaciónes
+# Complicaciones
 - Por el tamaño del modelo el despliegue disminuye su eficiencia
 - La predicción se tiene en el colab ya que el despliegue de la página web no se pudo lograr puesto que trabajos con el protocolo https, protocolo seguro el cual tiene restricciones para correr modelos de tensorflow en python.
