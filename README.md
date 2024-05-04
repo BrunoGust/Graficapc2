@@ -5,7 +5,7 @@ Se implementó el uso de Redes neuronales.
 # Ejecucion:
 # 1. Cargar los datos para prepararlos
 Para la obtener de los datos se desplegó un página web que nos permite dibujar los símbolos en un canva. Estos símbolos, que nos servirán para el modelo, se van guardando en archivos .npy:
-- X.npy: pixeles activos por imagen dentro del canva.
+- X.npy: píxeles activos por imagen dentro del canva.
 - y.npy: el número que se pide dibujar en cada canva.
 Lo que significa que el i-ésimo dibujo representado en X.npy, corresponde al número de la i-esima posición de y.npy.\
 Para el trabajo se cargaron en total 563 imagenes de simbolos alienigenas de los números 1, 2, 3 y 4.\
