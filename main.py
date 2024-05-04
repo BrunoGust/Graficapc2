@@ -13,6 +13,10 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route("/predict", methods=['POST'])
+def predict():
+    return render_template('predict.html')
+
 @app.route('/upload', methods=['POST'])
 def upload():
     try:
