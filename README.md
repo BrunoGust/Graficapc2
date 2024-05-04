@@ -11,7 +11,7 @@ Lo que significa que el i-ésimo dibujo representado en X.npy, corresponde al n�
 Para el trabajo se cargaron en total 563 imagenes de simbolos alienigenas de los números 1, 2, 3 y 4.\
 Luego que tengamos suficientes datos procedemos a descargar los archivos y.npy y X.npy.
 # 2. Red neuronal
-Luego de obtener los datos, pasamos al modelo en colab. \
+Luego de obtener los datos, pasamos al modelo en colab. 
 1. Dividimos nuestros datos en dos conjuntos: uno para entrenamiento y otro para el testeo.
 2. Alimentamos estos conjuntos de datos a nuestra red neuronal.
 3. Luego de tenerlo entrenado probamos con un dibujo libre.
